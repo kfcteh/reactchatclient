@@ -14,5 +14,5 @@ new WebpackDevServer(webpack(config), {
       console.log(err);
     }
 
-    console.log('Server Running');
+    console.log('Server Running',process.env.PORT);
   });
