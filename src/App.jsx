@@ -44,7 +44,7 @@ class App extends Component {
 
     console.log("componentDidMount <App />");
 
-    var conn = new WebSocket('ws://nodewschatserver.herokuapp.com');
+    var conn = new WebSocket('wss://nodewschatserver.herokuapp.com');
     conn.onopen = function(e) {
       console.log("Connection established!");
       console.log(e);
