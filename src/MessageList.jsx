@@ -9,7 +9,7 @@ class MessageList extends Component {
                        return (<div key={message.key}><Message origin={message.origin} timestamp={message.timestamp} userName={message.username} content={message.content}/></div>);
                      })
     return (
-      <div id="message-list">
+      <div className="box message-list">
       {messages}
         {/* <div className="message system">
           Anonymous1 changed their name to nomnom.

@@ -10,14 +10,14 @@ class Message extends Component {
 
     if(this.props.origin === 'incoming')
     {
-      messageClass = "message triangle-isosceles incoming-message";
+      messageClass = "column is-half is-offset-6 margin-top-bottom";
     }else {
-      messageClass = "message triangle-isosceles outgoing-message";
+      messageClass = "column is-half margin-top-bottom";
     }
 
     return (
       <div className={messageClass}>
-        <div className="padding-left-right-10px"><span>{this.props.userName}</span></div>
+        <div className="padding-left-right-10px"><span><b>{this.props.userName}</b></span></div>
         <div className="padding-left-right-10px"><span>{this.props.content}</span></div>
         <div className="padding-left-right-10px"><span>{this.props.timestamp}</span></div>
       </div>

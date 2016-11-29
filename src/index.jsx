@@ -1,7 +1,7 @@
 // Application entrypoint.
-
 // Load up the application styles
 require("../styles/application.scss");
+// require("https://cdnjs.cloudflare.com/ajax/libs/bulma/0.2.3/css/bulma.css");
 
 // Render the top-level React component
 import React from 'react';
